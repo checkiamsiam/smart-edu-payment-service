@@ -8,7 +8,6 @@ const routes: { path: string; route: Router }[] = [
     path: "/payment",
     route: paymentRoute,
   },
-  
 ];
 
 routes.forEach((route) => router.use(route.path, route.route));
