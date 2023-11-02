@@ -13,6 +13,12 @@ const config: IConfig = {
     url: process.env.REDIS_URL || "redis://localhost:6379",
     expires_in: process.env.REDIS_EXPIRES_IN || "3600",
   },
+  ssl: {
+    sslPaymentUrl: process.env.SSL_PAYMENT_URL as string,
+    sslValidationUrl: process.env.SSL_VALIDATION_URL as string,
+    storeId: process.env.SSL_STORE_ID as string,
+    storePassword: process.env.SSL_STORE_PASSWORD as string,
+  },
 };
 
 export default config;
